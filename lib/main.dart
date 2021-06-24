@@ -33,6 +33,7 @@ class HomeScreen extends GetView<HomeScreenController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         backgroundColor: Color(0xff2651FA),
         body: Stack(
           children: [
@@ -105,7 +106,7 @@ class HomeScreen extends GetView<HomeScreenController> {
   Widget _loginScreen() {
     return GetBuilder(
       builder: (HomeScreenController _) => IgnorePointer(
-        ignoring: true,
+        ignoring: !controller.lineController.isCompleted,
         child: Opacity(
           opacity: controller.animationLogin.value,
           child: Stack(

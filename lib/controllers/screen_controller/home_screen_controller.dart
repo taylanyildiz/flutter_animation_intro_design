@@ -115,7 +115,7 @@ class HomeScreenController extends GetxController
       animationController.reset();
     } else if (currentPage == 1) {
       Get.find<PageViewController>().pageController.nextPage(
-            duration: Duration(milliseconds: 700),
+            duration: Duration(seconds: 1),
             curve: Curves.ease,
           );
       animation =
