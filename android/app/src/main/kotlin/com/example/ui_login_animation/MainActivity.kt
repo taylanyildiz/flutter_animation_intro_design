@@ -1,4 +1,4 @@
-package com.example.ui_design_login
+package com.example.ui_login_animation
 
 import io.flutter.embedding.android.FlutterActivity
 

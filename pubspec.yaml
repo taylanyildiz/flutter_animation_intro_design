@@ -1,8 +1,7 @@
-name: ui_design_login
+name: ui_login_animation
 description: A new Flutter project.
 
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
@@ -13,9 +12,9 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
-  font_awesome_flutter: ^9.1.0
-  
+
   get: ^4.1.4
+  font_awesome_flutter: ^9.1.0
 
 dev_dependencies:
   flutter_test:

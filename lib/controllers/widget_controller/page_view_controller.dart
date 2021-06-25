@@ -3,9 +3,8 @@ import 'package:get/get.dart';
 
 class PageViewController extends GetxController {
   late PageController pageController;
-
-  late double? page = 0.0;
-  late double offset = 0.0;
+  double page = 0.0;
+  double offset = 0.0;
 
   @override
   void onInit() {
@@ -15,7 +14,7 @@ class PageViewController extends GetxController {
   }
 
   void _pageListener() {
-    page = pageController.page ?? 0;
+    page = pageController.page ?? 0.0;
     offset = pageController.offset;
     update();
   }
